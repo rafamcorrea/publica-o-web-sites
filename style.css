@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at 50% 20%, #0a0a15, #000);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    text-align: center;
+    padding: 3em 1em;
+    background: linear-gradient(135deg, #3f00ff, #9400ff);
+    box-shadow: 0 0 25px rgba(147, 0, 255, 0.4);
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 0.4em;
+}
+
+header p {
+    color: #dcdcdc;
+    font-weight: 300;
+}
+
+.galaxy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    padding: 4em 2em;
+    perspective: 1000px;
+}
+
+.planet {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 2em;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform-style: preserve-3d;
+}
+
+.planet:hover {
+    transform: rotateY(15deg) scale(1.05);
+    box-shadow: 0 0 25px rgba(147, 0, 255, 0.6);
+}
+
+.planet h2 {
+    font-size: 1.6em;
+    color: #c2aaff;
+}
+
+.planet p {
+    margin: 1em 0 1.5em;
+    color: #bcbcbc;
+    font-size: 0.95em;
+}
+
+.planet a {
+    text-decoration: none;
+    background: linear-gradient(90deg, #5d00ff, #9b00ff);
+    color: white;
+    padding: 0.7em 1.8em;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(147, 0, 255, 0.5);
+}
+
+.planet a:hover {
+    background: white;
+    color: #4b00ff;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5em;
+    font-size: 0.9em;
+    color: #aaa;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    background: rgba(0,0,0,0.4);
+}
